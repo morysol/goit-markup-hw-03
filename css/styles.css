@@ -1,0 +1,399 @@
+/* box model из лекции Репеты */
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/* colors */
+
+:root {
+  --color-logo: #000000;
+  --color-logo-footer: #ffffff;
+
+  --color-link-on: #2196f3; /* and logo "web" */
+
+  --color-H1: #ffffff; /* main header, team bg */
+  --color-H2: #212121; /* headers, links */
+  --color-body-txt: #757575; /* contacts-header and footer */
+
+  --color-button-txt: #212121;
+  --color-button-bg: #f5f4fa; /* our-team bg */
+  --color-button-txt-on: #ffffff;
+  --color-button-bg-on: #2196f3;
+
+  --color-contacts-footer: rgba(255, 255, 255, 0.6);
+  --color-footer-bg: #2f303a; /* and, main header */
+
+  --color-page-header-border: #ececec;
+}
+/* global part */
+.logo-link,
+.logo-link-footer,
+.nav-link,
+.contacts-header,
+.contacts-footer,
+.address-footer {
+  font-style: normal;
+  text-decoration: none; /* GLOBAL remove all links underline */
+}
+
+/* .main-navigation-list,
+.contacts-list,
+.features-list,
+.our-business-list,
+.our-team-members,
+.footer-list,
+.top-bar-list,
+.portfolio-list */
+ul {
+  list-style-type: none; /* GLOBAL remove all ul dots */
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+
+  color: var(--color-body-txt);
+}
+.address-footer {
+  font-style: normal;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.logo-link,
+.logo-link-footer {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  letter-spacing: 0.03em;
+}
+
+/* logo */
+.logo-link {
+  color: var(--color-logo);
+}
+.logo-link-footer {
+  color: var(--color-logo-footer);
+}
+.address-footer {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--color-logo-footer);
+}
+.logo-blue {
+  color: var(--color-link-on);
+}
+
+/* navigation */
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+
+  color: var(--color-H2);
+}
+
+/*  tel, email  */
+.contacts-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+
+  color: var(--color-body-txt);
+}
+
+.contacts-footer {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: var(--color-contacts-footer);
+}
+.main-header,
+.footer {
+  background-color: var(--color-footer-bg);
+}
+
+/* file index.html */
+
+.hero-header {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--color-H1);
+}
+
+.h2-features,
+.h2-business,
+.h2-team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--color-H2);
+}
+
+.h3-features {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--color-H2);
+}
+
+/* styles for all <p> */
+.features-list {
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+}
+
+.h3-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--color-H2);
+}
+.members-post {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* file portfolio */
+.h2-portfolio {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+  color: var(--color-H2);
+}
+.portfolio-list {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.nav-link:hover,
+.contacts-header:hover,
+.contacts-footer:hover,
+.nav-link:focus,
+.contacts-header:focus,
+.contacts-footer:focus {
+  color: var(--color-link-on);
+}
+
+.purchase-button {
+  display: inline-block;
+  padding: 10px 32px;
+  width: 200px;
+  min-height: 50px;
+
+  color: var(--color-button-txt-on);
+  background-color: var(--color-button-bg-on);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.top-bar-button {
+  color: var(--color-button-txt);
+  background-color: var(--color-button-bg);
+  cursor: pointer;
+}
+
+.purchase-button:hover,
+.top-bar-button:hover,
+.purchase-button:focus,
+.top-bar-button:focus {
+  color: var(--color-button-txt-on);
+  background-color: var(--color-button-bg-on);
+
+  border-radius: 4px;
+}
+
+/* hidding hidden :) */
+
+.hidden-content {
+  font-size: 0;
+}
+
+/* borders, paddings sizes etc */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page-header {
+  border: 1px solid var(--color-page-header-border);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  margin: 0;
+  padding: 94px 0;
+}
+
+/* page index */
+.page-header {
+  min-height: 80px;
+}
+
+.page-header,
+.page-header > .container,
+.main-navigation,
+.main-navigation-list,
+.contacts-list {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: inline-block;
+  margin-right: 93px;
+}
+.main-navigation-list {
+  width: 296px;
+  justify-content: space-between;
+}
+
+.contacts-list {
+  margin-left: auto;
+}
+
+.contacts-list > li:first-child {
+  margin-right: 50px;
+}
+
+.main-header {
+  text-align: center;
+}
+.hero-header {
+  padding-top: 106px; /* 200-94 - section padding */
+  margin: 0 auto 30px auto;
+  width: 696px;
+}
+
+.features-list {
+  display: flex;
+}
+
+.h3-features,
+.p3-features {
+  width: 270px;
+}
+
+.our-business-list {
+  display: flex;
+}
+
+/* fix header position */
+.our-business {
+  padding-top: 0; /* header up */
+}
+
+.our-business-list {
+  margin-top: 94px; /* images down */
+}
+
+.our-business-list > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-team {
+  background-color: var(--color-button-bg);
+}
+
+.our-team-members {
+  display: flex;
+}
+
+.our-team-members li {
+  background-color: var(--color-H1);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-members img {
+  margin-bottom: 30px;
+}
+
+.h3-team {
+  margin-bottom: 10px;
+}
+
+.our-team-members > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.members-post {
+  margin-bottom: 30px;
+}
+
+.footer {
+  min-height: 252px;
+  padding: 60px 0;
+}
+
+.logo-link-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer-list > li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* page portfolio */
+.portfolio-list > li {
+  border-bottom: 1px solid #eeeeee;
+}
