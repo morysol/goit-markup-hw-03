@@ -27,23 +27,23 @@
           <a class="logo-link" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
 
           <ul class="main-navigation-list">
-            <li>
+            <li class="main-navigation-item">
               <a href="./index.html" class="nav-link">Студия</a>
             </li>
-            <li>
+            <li class="main-navigation-item">
               <a href="./portfolio.html" class="nav-link">Портфолио</a>
             </li>
-            <li>
+            <li class="main-navigation-item">
               <a href="#" class="nav-link">Контакты</a>
             </li>
           </ul>
         </nav>
 
         <ul class="contacts-list">
-          <li>
+          <li class="contacts-item">
             <a class="contacts-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li>
+          <li class="contacts-item">
             <a class="contacts-header" href="tel:info@+380961111111">tel +38 096 111 11 11</a>
           </li>
         </ul>
@@ -53,8 +53,7 @@
     <!-- main content -->
 
     <main>
-      <!-- h1 header, button -->
-      <section class="main-header section">
+      <section class="main-header">
         <div class="container">
           <h1 class="hero-header">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="purchase-button">Заказать услугу</button>
@@ -62,32 +61,32 @@
       </section>
 
       <!-- features list **   -->
-      <section class="features-section section">
+      <section class="section">
         <div class="container">
           <!-- todo hidden header -->
-          <h2 class="h2-features hidden-content">Наши качества</h2>
+          <h2 class="features-title visualy-hidden">Наши качества</h2>
           <ul class="features-list">
-            <li>
-              <h3 class="h3-features">Внимание к деталям</h3>
-              <p class="p3-features">
+            <li class="features-item">
+              <h3 class="features-item-title">Внимание к деталям</h3>
+              <p class="features-item-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li>
-              <h3 class="h3-features">Пунктуальность</h3>
-              <p class="p3-features">
+            <li class="features-item">
+              <h3 class="features-item-title">Пунктуальность</h3>
+              <p class="features-item-text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li>
-              <h3 class="h3-features">Планирование</h3>
-              <p class="p3-features">
+            <li class="features-item">
+              <h3 class="features-item-title">Планирование</h3>
+              <p class="features-item-text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li>
-              <h3 class="h3-features">Современные технологии</h3>
-              <p class="p3-features">
+            <li class="features-item">
+              <h3 class="features-item-title">Современные технологии</h3>
+              <p class="features-item-text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
@@ -95,17 +94,17 @@
         </div>
       </section>
       <!--  picters -->
-      <section class="our-business section">
+      <section class="our-business">
         <div class="container">
-          <h2 class="h2-business">Чем мы занимаемся</h2>
+          <h2 class="our-business-title">Чем мы занимаемся</h2>
           <ul class="our-business-list">
-            <li>
+            <li class="our-business-item">
               <img src="./images/business1.jpg" alt="image our business 1" width="370" />
             </li>
-            <li>
+            <li class="our-business-item">
               <img src="./images/business2.jpg" alt="image our business 2" width="370" />
             </li>
-            <li>
+            <li class="our-business-item">
               <img src="./images/business3.jpg" alt="image our business 3" width="370" />
             </li>
           </ul>
@@ -115,31 +114,39 @@
       <!-- members list (card, name, post) -->
       <section class="our-team section">
         <div class="container">
-          <h2 class="h2-team">Наша команда</h2>
-          <ul class="our-team-members">
-            <li>
+          <h2 class="our-team-title">Наша команда</h2>
+          <ul class="our-team-list">
+            <li class="our-team-item">
               <img src="./images/product-designer.jpg" alt="Product Designer photo" width="270" />
-              <h3 class="h3-team">Игорь Демьяненко</h3>
-              <p class="members-post">Product Designer</p>
+              <div class="team-card">
+                <h3 class="team-list-title">Игорь Демьяненко</h3>
+                <p class="our-team-text">Product Designer</p>
+              </div>
             </li>
-            <li>
+            <li class="our-team-item">
               <img
                 src="./images/frontend-developer.jpg"
                 alt="Frontend Developer photo"
                 width="270"
               />
-              <h3 class="h3-team">Ольга Репина</h3>
-              <p class="members-post">Frontend Developer</p>
+              <div class="team-card">
+                <h3 class="team-list-title">Ольга Репина</h3>
+                <p class="our-team-text">Frontend Developer</p>
+              </div>
             </li>
-            <li>
+            <li class="our-team-item">
               <img src="./images/marketing.jpg" alt="Marketing photo" width="270" />
-              <h3 class="h3-team">Николай Тарасов</h3>
-              <p class="members-post">Marketing</p>
+              <div class="team-card">
+                <h3 class="team-list-title">Николай Тарасов</h3>
+                <p class="our-team-text">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="our-team-item">
               <img src="./images/ui-designer.jpg" alt="UI Designer photo" width="270" />
-              <h3 class="h3-team">Михаил Ермаков</h3>
-              <p class="members-post">UI Designer</p>
+              <div class="team-card">
+                <h3 class="team-list-title">Михаил Ермаков</h3>
+                <p class="our-team-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -153,18 +160,18 @@
         <a class="logo-link-footer" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
         <!-- address here -->
         <address>
-          <ul class="footer-list">
-            <li>
+          <ul class="footer-item">
+            <li class="footer-item">
               <a
                 class="address-footer"
                 href="https://www.google.com/maps/d/embed?mid=10uSM3H-mIU3GznYo2szRIEphczw&ehbc=2E312F"
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li>
+            <li class="footer-item">
               <a class="contacts-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li>
+            <li class="footer-item">
               <a class="contacts-footer" href="tel:info@+380961111111">tel +38 096 111 11 11</a>
             </li>
           </ul>
