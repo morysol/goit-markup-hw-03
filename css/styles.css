@@ -269,8 +269,11 @@ body {
 /* hidding hidden :) */
 
 .visualy-hidden {
-  /* font-size: 0; */
-  transform: scale(0);
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 /* flex, borders, paddings, sizes etc */
@@ -344,6 +347,10 @@ ul {
 
 .features-list {
   display: flex;
+}
+
+.our-business {
+  padding-bottom: 94px;
 }
 
 .our-business-list {
